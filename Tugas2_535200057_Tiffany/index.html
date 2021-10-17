@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffany's Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b312a7efb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logotiff.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PROJECT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Howdy, it's Tiffany!</h1>
+            <p>A student at Tarumanagara University</p>
+            <a href="" class="box-more">Get to know more about me</a> 
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="image-about">
+            <img src="images/mifoto.png" height="390" width:"390">
+        </div>
+        <div class="text-about">
+            <h2>About Me</h2>
+            <p>Hey, I'm Tiffany. An 18-year-old Computer Science<br>
+                student at Faculty of Information Technology, <br>
+           Tarumanagara University.<br>
+           Name : Tiffany<br> 
+           Age : 18<br>
+           Gender : Female<br>
+           Address : Jakarta, Indonesia<br>
+           Nationality : Indonesian<br>
+           Occupation : Student<br>
+           Hobby : Travelling<br>
+        </p>
+        </div>
+    </section>
+
+    <section class="footer">
+            <i class="fab fa-instagram"></i>
+            <i class="far fa-envelope-open"></i>
+            <i class="fab fa-pinterest"></i>
+    </section>
+    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+   
+</body>
+</html>
